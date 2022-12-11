@@ -22,11 +22,14 @@ import createMainDescription from "./description.js";
 
 createMainDescription();
 
-import contentFiles from "./contentfile.js"
+import contentFiles from "./contentfile.js";
+
+import menuFiles from "./menufile.js";
 
 const contentTabbs = document.getElementById("ContentTabS");
 const menuTabbs = document.getElementById("MenuTabS");
 const descriptionS = document.getElementById("mainDescrip");
 
 contentTabbs.addEventListener("click", contentFiles);
+menuTabbs.addEventListener("click", menuFiles);
 
